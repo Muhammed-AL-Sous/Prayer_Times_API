@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Times API Challenge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>مواقيت الصلاة في سوريا</h2>
+      <div class="container">
+        <div class="main-head">
+          <p>دمشق</p>
+          <span class="today"></span>
+        </div>
+        <div class="selection">
+          <label for="sel">اختر المدينة :</label>
+          <select name="sel" id="Selector"></select>
+        </div>
+      </div>
+    </header>
+    <!-- ================================== -->
+
+    <section>
+      <div class="pic">
+        <img class="main-pic" src="images/pic-01.jpg" alt="pic-01" />
+        <img class="mobile-pic" src="images/pic-02.jpg" alt="pic-02" />
+      </div>
+    </section>
+
+    <!-- ================================== -->
+    <section>
+      <div class="container">
+        <div class="boxs">
+          <div class="box">
+            <div class="Fajr">
+              <h4>الفجر</h4>
+              <span class="Fajr-time"></span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="Sunrise">
+              <h4>الشروق</h4>
+              <span class="Sunrise-time"></span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="Dhuhr">
+              <h4>الظهر</h4>
+              <span class="Dhuhr-time"></span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="Asr">
+              <h4>العصر</h4>
+              <span class="Asr-time"></span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="Maghrib">
+              <h4>المغرب</h4>
+              <span class="Maghrib-time"></span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="Isha">
+              <h4>العشاء</h4>
+              <span class="Isha-time"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
