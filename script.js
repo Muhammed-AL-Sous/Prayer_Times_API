@@ -21,7 +21,7 @@ for (let city of cities) {
 
 function getCurrentTimes(name) {
   axios
-    .get("http://api.aladhan.com/v1/timingsByCity?country=Syria&city=" + name)
+    .get("https://api.aladhan.com/v1/timingsByCity?country=Syria&city=" + name)
     .then((response) => {
       let dayOfTheWeek = response.data.data.date.hijri.weekday.ar;
       let day = response.data.data.date.gregorian.day;
